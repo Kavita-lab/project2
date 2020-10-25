@@ -1,0 +1,111 @@
+<HTML>
+<HEAD>
+<TITLE>Register on Indian Railways</TITLE>
+<LINK REL="STYLESHEET" HREF="STYLE.CSS">
+<style type="text/css">
+*	{
+	color: #222;
+}
+#register_form	{
+	background-color: #D5DBDB;
+	width: 40%;
+	margin: auto;
+	border-radius: 25px;
+	border: 2px #E5E8E8; 
+	margin-top: 25px;
+}
+#nav	{
+	color: white;
+}
+#logintext	{
+	margin-top: 10px;
+}
+#login	{
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+</style>
+<SCRIPT src="validation.js"></SCRIPT>
+</HEAD>
+<BODY  background="rail1.jpg" width="100px" height="100px" link="white" alink="white" vlink="white" >
+<?php include("header.php") ?>
+<div id="register_form" align="center" height="200" width="200">
+<FORM name="register" method="post" action="login1.html" onsubmit="return validate()">
+<TABLE border="0">
+<CAPTION><FONT size="6" color="WHITE" face="Century">Register on Indian Railways</FONT></CAPTION>
+<tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+<TR class="left">
+<TD><FONT size="3" color="WHITE">name*:</FONT></TD>
+<TD><INPUT name="name" type="TEXT" placeholder="Enter train name" size="30" maxlength="30" align="center" id="name"></TD>
+</TR><tr></tr><tr></tr>
+<TR class="left">
+<TD><FONT size="3" color="WHITE">origin*:</FONT></TD>
+<TD><INPUT type="TEXT" name="origin" align="center" size="30" maxlength="30" placeholder="Enter origin" id="origin"></TD>
+</TR><tr></tr><tr></tr>
+<TR class="left">
+<TD><FONT size="3" color="WHITE">destination:</FONT></TD>
+<TD><INPUT type="TEXT" name="destination" align="center" size="30" maxlength="3" placeholder="Enter destination" id="age"></TD>
+</TR><tr></tr><tr></tr>
+
+<TR class="left">
+<TD><FONT size="3" color="WHITE">t_no:</FONT></TD>
+<TD><INPUT type="text" name="t_no" align="center" size="30" maxlength="3"  id="t_no"></TD>
+</TR><tr></tr><tr></tr>
+
+
+<TR class="left">
+<TD><FONT size="3" color="WHITE">seat:</FONT></TD>
+<TD><INPUT type="TEXT" name="seat" size="30" maxlength="10" placeholder="Enter no of seat" id="mob"></TD>
+</TR><tr></tr><tr></tr>
+<TR class="left">
+<TR class="left">
+<TD><FONT size="3" color="WHITE">:</FONT></TD>
+&nbsp;&nbsp;
+
+</TR><tr>
+
+</tr><tr></tr>
+<TR class="left">
+<TR class="left">
+
+
+</tr><tr></tr>
+<tr><td>train_type:</td>
+<td><select name="train">
+<option>genral</option>
+<option>shatabdi express</option>
+<option>express</option>
+<option>maharaja express</option>
+
+</td>
+</select>
+</tr>
+
+<TR class="left">
+<TD><FONT size="3" color="WHITE">timing:</FONT></TD>
+<TD><INPUT name="timing" type="TEXT" id="timing" size="30" maxlength="30"></TD>
+</TR><tr></tr><tr></tr>
+<TR class="left">
+<TD><FONT size="3" color="WHITE">arrival:</FONT></TD>
+<TD><INPUT type="text" name="ar" size="30"  id="ar"></TD>
+</TR><tr></tr><tr></tr>
+<TR class="left">
+<TD><FONT size="3" color="WHITE">total seat:</FONT></TD>
+<TD><INPUT type="text" name="tseat" size="30" id="seat"></TD>
+</TR><tr></tr><tr></tr><tr></tr><tr></tr>
+<tr></tr><tr></tr><tr></tr>
+<tr>
+
+
+</TABLE>
+<P><INPUT TYPE="Submit" value="Submit" name="submit" id="submit" class="button" onclick="if(!this.form.tc.checked){alert('You must agree to the terms first.');return false}">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<INPUT TYPE="Reset" value="Reset" id="reset" class="button"></P></FORM><br/>
+<HR width="450" style="border-color:#E5E8E8;display: block;" noshade>
+<FORM action="login1.html">
+<P align="CENTER" id="logintext"><FONT size="6" color="white" face="Century">
+Already have an account with us?<BR/></FONT></FONT>
+<INPUT TYPE="submit" value="Login" id="login" class="button">
+</P>
+</FORM></div>
+</BODY>
+</HTML>
